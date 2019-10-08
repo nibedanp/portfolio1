@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nibedan Pal Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.2/css/font-awesome.min.css'>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Nibedan Pal Portfolio</title>
+<style type="text/css">
+  /*fonts*/
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+
+/*global*/
+.navbar-default .navbar-nav > .active > a {
+    background-color: #ccc;
+}
+.navbar-default .navbar-nav > li:hover> a, .navbar-default .navbar-nav > .active:hover > a {
+    background-color: #ffb424;
+}
+.navbar-default .social-list > li:hover> a {
+    color: #ffb424;
+    background: none;
+}
+h2 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    letter-spacing: 0.7rem;
+}
+/*global end*/
+
+/*header navbar*/
+nav.navbar {
+    background: #fff;
+    font-family: 'Lato', serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+}
+.scroll-down {
+    margin-top: 3%;
+}
+
+/*social list*/
+.social-list {
+    margin: 7px 25px;
+}
+.social-list li {
+    margin: 0 6px;
+}
+.social-list li a {
+    border: 1px solid black;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    padding: 2px 4px;
+    display: block;
+    width: 33px;
+    height: 33px;
+}
+.social-list li:hover i {
+    color: #ffb424;
+}
+.fa-linkedin{
+    padding-left: 1px;
+}
+.fa-facebook{
+    padding: 3px 0 0 3px;
+}
+.social-list li i {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    vertical-align: baseline;
+}
+/*social list end*/
+
+/*banner*/
+header .banner {
+    background: url("https://media.giphy.com/media/l4KihuqeuJEi9qLSM/giphy.gif") 70% no-repeat;
+    background-position: top;
+    background-size: 100%;
+    height: 55%;
+    position: relative;
+    z-index: -10;
+}
+.banner-content {
+    color: #fff;
+    font-family: "Lato", serif;
+    text-align: right;
+    text-transform: uppercase;
+    margin-top: 17%;
+    letter-spacing: 0.4rem;
+}
+.banner-content h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+.banner-content h3 {
+    font-size: 3rem;
+    margin: 5% 0;
+    color: #eeeeee;
+    font-weight: bold;
+}
+/*banner end*/
+/*header end*/
+
+/*about*/
+.about {
+    background: #eee;
+}
+.about-content {
+    margin-top: 7%;
+    font-family: "Lato", serif;
+}
+.about-content h2 {
+    margin: 5%;
+}
+.about-text {
+    font-size: 2rem;
+    line-height: 2;
+    margin: 5% 0 7%;
+}
+/*about end*/
+
+/*works*/
+.block {
+    box-shadow: 4px 4px 7px #333;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 10%;
+}
+.works {
+    padding-bottom: 3%;
+    background: #fff;
+}
+.works-thumb {
+    height: 300px;
+}
+#work-1 {
+    background: url("https://miro.medium.com/max/1306/1*25mAVaMzIBQkUuJZVqjxEg.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-2 {
+    background: url("https://miro.medium.com/max/2028/1*VDsw4qpg3vgP9ccHyozQMA.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-3 {
+    background: url("https://cdn.redmondpie.com/wp-content/uploads/2013/08/iOS-7-calci-2-image.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-4 {
+    background: url("https://is2-ssl.mzstatic.com/image/thumb/Purple123/v4/5e/90/c9/5e90c962-fd63-786b-ff3e-19a5ae4d56aa/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/1200x630wa.png") no-repeat 100%;
+    background-size: cover;
+}
+#work-5 {
+    background: url("https://www.lifewire.com/thmb/tJCIpF-chKxWvl0xjy-0ZuEI85E=/768x0/filters:no_upscale():max_bytes(150000):strip_icc()/random-numbers-over-blackboard-166043947-57bb63065f9b58cdfd31d1fe.jpg") no-repeat 100%;
+    background-size: cover;
+}
+#work-6 {
+    background: url("https://blog.bookbaby.com/wp-content/uploads/2017/11/Blog-Become-a-Book-Banner-696x295.jpg") no-repeat 100%;
+    background-size: cover;
+}
+.block::after, .block::before {
+    content: '';
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    display: block;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    overflow: hidden;
+}
+.block::after {
+    left: -50%;
+    transition: 0.5s;
+}
+.block::before {
+    right: -50%;
+    transition: 0.5s;
+}
+.block:hover:after {
+    left: 0;
+}
+.block:hover:before {
+    right: 0;
+}
+.works-caption {
+    text-align: center;
+    font-family: "Lato", serif;
+    font-size: 2rem;
+    letter-spacing: 0.4rem;
+    position: absolute;
+    border-radius: 10px;
+    display: block;
+    padding: 15px 2px;
+    width: 60%;
+    left: 20%;
+    top:-40%;
+    z-index: 1;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: top 0.5s;
+}
+.block:hover .works-caption {
+    top: 33%;
+}
+.works h2 {
+    margin: 7% 0;
+}
+/*works end*/
+
+/*skillls*/
+.skills {
+    background: #a3df41;
+    text-align: center;
+}
+.skills h2 {
+    margin: 7%;
+    color: #fff;
+}
+.skills .skills-thumb {
+   margin-bottom: 5%;
+}
+/*skills end*/
+
+/*social list main*/
+.social-footer {
+    background: #fff;
+}
+.social-footer h2 {
+    margin: 5% 0 3%;
+}
+.social-footer .social-list {
+    display: inline-block;
+    padding: 0;
+    margin-bottom: 5%;
+}
+.social-footer .social-list li a{
+    display: block;
+    position: relative;
+    border: 2px solid #444;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    width: 60px;
+    height: 60px;
+}
+.social-footer .social-list li {
+    display: inline-block;
+    list-style: none;
+    margin-left: 15px;
+}
+.social-footer .social-list li a i {
+    margin-top: 5px;
+    color: #444
+}
+.social-footer .social-list li:hover i {
+    color: #ffb424;
+}
+.social-footer .social-list .fa-facebook {
+    padding: 2px 0 0 0;
+}
+
+/*footer*/
+footer {
+    background: url("http://www.bmninfotech.com/wp-content/uploads/2018/12/footer-background.jpg");
+    background-size: cover;
+    color: #fff;
+}
+footer h2 {
+    margin-top: 7%;
+}
+.contact { 
+    margin: 5% 0;
+}
+.contacts-data {
+    margin: 3% 7%;
+}
+.contacts-data .btn {
+    background: transparent;
+    padding: 15px 20px;
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 7%;
+}
+.contacts-data .btn:hover {
+    background: #ffb424;
+    color: #fff;
+}
+.contact .button-icon {
+    padding-left: 10px;
+}
+.contact-text {
+    font-family: "Lato", serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.33rem;
+    padding-left: 7%;
+}
+/*footer end*/
+
+/* media queries */
+@media screen and (min-width: 991px) {
+    header .banner {
+        background-position: center;
+    }
+}
+@media screen and (max-width: 990px) {
+    header .banner-content {
+        text-align: center;
+    }
+    .scroll-down {
+        display: none;
+    }
+    .contacts-data {
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px) {
+    header .banner-content h1 {
+        font-size: 4rem;
+    }
+    header .banner-content h3 {
+        font-size: 2.5rem;
+    }
+    header .social-list {
+        display: none;
+    }
+    .block {
+        width: 65%;
+        margin: 20px auto;
+    }
+    .skills img {
+        width: 65%;
+    }
+}
+@media screen and (max-width: 491px) {
+    header .banner-content h1 {
+        font-size: 2.5rem;
+    }
+    header .banner-content h3 {
+        font-size: 1.5rem;
+    }
+}
+</style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body data-spy="scroll" data-target="#nav">
+  <header class="clearfix" id="home">
+    <nav class="navbar navbar-default navbar-fixed-top" id="nav">
+      <div class="container">
+        <div class="navbar-header">
+          <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                        <span class="sr-only"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+          <ul class="nav navbar-nav social-list">
+            <li><a href="https://github.com/nibedanp" target="_blank"><i class="fa fa-github fa-2x" title="GitHub" aria-hidden="true"></i>
+                        </a></li>
+            </i>
+            </a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/nibedanp/" target="_blank"><i class="fa fa-linkedin fa-2x" title="LinkedIn" aria-hidden="true"></i>
+                        </a></li>
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li data-elem="parallax"><a href="#home">HOME</a></li>
+            <li data-elem="about"><a href="#about">ABOUT</a></li>
+            <li data-elem="works"><a href="#works">WORKS</a></li>
+            <li data-elem="skills"><a href="#skills">SKILLS</a></li>
+            <li data-elem="contacts"><a href="#contacts">CONTACTS</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="banner parallax scroll" id="parallax">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-4 col-md-8 col-sm-12  banner-content">
+            <h2>WELCOME </h2>
+            <h1>
+              I'm Nibedan Pal
+            </h1>
+            <h3>Budding Full Stack Web Developer </h3>
+            <h3>Fellow @ Newton School </h3>
+          </div>
+        </div>
+        <div class="row">
+          <img src="#" alt="" class="image-responsive center-block scroll-down">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="about scroll" id="about">
+    <div class="container">
+      <div class="row">
+        <div class="text-center about-content">
+          <h2>Hi there!</h2>
+          <img src="https://media.licdn.com/dms/image/C5103AQE9QyIgvdhDsQ/profile-displayphoto-shrink_200_200/0?e=1574294400&v=beta&t=REVjSvZq_aS8PE_gjb59-SPi45s8_8tt9OYA3Mf1f20" alt="about me" class="image-responsive img-circle img-thumbnail center-block">
+          <p class="about-text">My name is Nibedan Pal, I am from Kolkata. And I'm a beginner full stack web developer, currently I am student at Newton School where I am learning HTML,CSS,Bootstrap , JS&Jquery, NodeJS. Now I practice in the development of web applications, and
+            some frameworks like Angular, React etc. I want to learn more and utilize my skills in the field of Information Technology and to help solve real world challenges:)
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="works scroll" id="works">
+    <div class="container">
+      <h2 class="text-center">
+        Portfolio projects
+      </h2>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" target="_blank">
+            <div class="block wow rotateInDownLeft" data-wow-duration="1s" data-wow-delay="0.15s">
+              <div class="works-thumb" id="work-1"></div>
+              <div class="works-caption"> Twitch TV App</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" target="_blank">
+            <div class="block wow rotateInDownLeft" data-wow-duration=".8s" data-wow-delay="0.3s">
+              <div class="works-thumb" id="work-2"></div>
+              <div class="works-caption">Watch local weather app</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" target="_blank">
+            <div class="block wow rotateInDownLeft" data-wow-duration=".8s" data-wow-delay="0.45s">
+              <div class="works-thumb" id="work-3"></div>
+              <div class="works-caption">Calculator app</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" target="_blank">
+            <div class="block wow rotateInDownRight" data-wow-duration=".8s" data-wow-delay="0.6s">
+              <div class="works-thumb" id="work-4"></div>
+              <div class="works-caption">Wikipedia search app</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <a href="#" target="_blank">
+            <div class="block wow rotateInDownRight" data-wow-duration=".8s" data-wow-delay="0.75s">
+              <div class="works-thumb" id="work-5"></div>
+              <div class="works-caption">Random quote generator</div>
+            </div>
+          </a>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="block wow rotateInDownRight" data-wow-duration=".8s" data-wow-delay="0.9s">
+            <div class="works-thumb" id="work-6"></div>
+            <a href="#">
+              <div class="works-caption">Photo blog</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="skills scroll" id="skills">
+    <div class="row text-center">
+      <div class="col-12 pb-4 justify-content-center align-items-center text-center">
+        <p class="lead">
+      </div>
+      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-sm-0">
+        <img data-original="https://png.pngtree.com/svg/20170710/12175a889e.svg" width="100px" height="100px" src="https://png.pngtree.com/svg/20170710/12175a889e.svg">
+        <h3><strong>Front-End Development</strong></h3>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-sm-0">
+        <img src="https://img.icons8.com/color/100/000000/nodejs.png">
+        <h3><strong>Back-End Development</strong></h3>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-md-0">
+        <img src="https://img.icons8.com/color/96/000000/adobe-creative-cloud.png">
+        <h3><strong>UI/UX Design</strong></h3>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-3 pt-5 pt-md-0">
+        <img src="https://img.icons8.com/color/100/000000/gantt-chart.png">
+        <h3><strong>Product Management</strong></h3>
+      </div>
+    </div>
+  </section>
+  <section class="social-footer text-center scroll" id="contacts">
+    <div class="container">
+      <h2>Social links</h2>
+      <ul class="social-list">
+        <li><a href="https://github.com/nibedanp" target="_blank"><i class="fa fa-github fa-3x" title="GitHub" aria-hidden="true"></i>
+                </a></li>
+
+                </a></li>
+        <li> <a href="https://www.linkedin.com/in/nibedanp/" target="_blank"><i class="fa fa-linkedin fa-3x" title="LinkedIn" aria-hidden="true"></i>
+                </a></li>
+        <li> <a href="#"><i class="fa fa-facebook fa-3x" title="Facebook" aria-hidden="true"></i>
+                </a></li>
+      </ul>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <h2 class="text-center">Get in touch</h2>
+      <div class="row contact">
+        <div class="col-md-6 text-right">
+          <div class="contacts-data">
+            <h3>Ready to hire me?</h3>
+            <a href="#" class="btn btn-default transparent">Get in touch <i class="fa fa-arrow-right button-icon"></i></a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="contacts-data">
+            <i class="fa fa-paper-plane fa-2x"></i>
+            <span class="contact-text">XYZ@MAIL.COM</span>
+          </div>
+          <div class="contacts-data">
+            <i class="fa fa-phone fa-2x"></i>
+            <span class="contact-text">123456789</span>
+          </div>
+          <div class="contacts-data">
+            <i class="fa fa-skype fa-2x"></i>
+            <span class="contact-text">skype</span>
+          </div>
+        </div>
+      </div>
+      <p class="text-center">
+      </p>
+    </div>
+  </footer>
+</body>
+<!-- partial -->
+  
+
+</body>
+</html>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js'></script>
+
+</body>
+</html>
